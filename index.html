@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - INAKA LAJOIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans mon monde</h1>
+        <nav>
+            <ul id="liens">
+                <li class="lien"><a href="portefolio.html">À propos</a></li>
+                <li class="lien"><a href="a propos.HTML">Compétences</a></li>
+                <li class="lien"><a href="contact.HTML">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="btn-menu">Menu</button>
+        <div id="navbar-cache">
+            <div id="navbar-content">
+                <div id="navbar-header">
+                    <h1>Mon Portfolio</h1>
+                </div>
+                <ul id="liens">
+                    <li class="lien"><a href="index.html">À propos</a></li>
+                    <li class="lien"><a href="a propos.HTML">Compétences</a></li>
+                    <li class="lien"><a href="contact.HTML">Contact</a></li>
+                </ul>
+            </div>
+            <div id="navbar-clicable"></div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>
+            Je suis <strong>INAKA LAJOIE</strong>, étudiante à l'Université Protestante au Congo (UPC) en FASI (Faculté des Sciences Informatiques). 
+            À côté de mes études, je suis business woman, passionnée par l'informatique et la médecine. 
+            J'aime créer des solutions innovantes qui apportent de la valeur. 
+            Je crois fermement en la femme que je suis, avec toutes les qualités nécessaires pour combattre toute timidité face à mes ambitions.
+        </p>
+    </section>
+
+    <section>
+        <img src="./WhatsApp Image 2025-04-03 à 08.36.37_b94a5d98.jpg" height="200" alt="image 2">
+        <p>
+            Comme j'aime le dire : chaque épreuve, chaque joie, même les petites, contribuent à former notre être. 
+            La vie est un cycle constant de découvertes et de transformations, et chaque pas que nous faisons nous rapproche un peu plus de notre essentiel.
+        </p>
+    </section>
+
+    <section>
+        <h2>Études faites</h2>
+        <ul>
+            <li>Détentrice d'un diplôme d'État en sciences</li>
+            <li>Détentrice d'un certificat à l'école d'Anglais (CALI)</li>
+        </ul>
+    </section>
+    <script> 
+        const monButton = document.getElementById("btn-menu");
+        const menuCache = document.getElementById("navbar-cache");
+        const closeButton = document.getElementById("navbar-clicable");
+
+        monButton.addEventListener("click", function () {
+            menuCache.style.display = "flex";
+        });
+
+        closeButton.addEventListener("click", function () {
+            menuCache.style.display = "none";
+        });
+    </script>
+     <footer>
+        <p>© 2025 Ma vie, bisous</p>
+    </footer>
+    
+</body>
+</html>
